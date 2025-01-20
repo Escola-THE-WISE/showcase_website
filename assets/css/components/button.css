@@ -1,0 +1,15 @@
+/* estilos para botões, com a nomenclatura BEM*/
+
+/* Estilo base para botões */
+button {
+    font-family: inherit; /* Usa a mesma fonte do texto */
+    font-size: 1rem;
+    background-color: #FBBA18;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  

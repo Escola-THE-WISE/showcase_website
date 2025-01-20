@@ -1,0 +1,35 @@
+/* estilos para estados, como hover, active, disabled */
+
+
+
+
+/* Botão de Alerta Tela Login */
+
+/* Hover para botão */
+.button:hover {
+    background-color: #460ca1;
+  }
+  
+  /* Visibilidade de alerta */
+  #alert-box {
+    display: none;
+    color: #460ca1;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #460ca1;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Opacidade reduzida */
+  .opacity-50 {
+    opacity: .5;
+  }
+  
+  /* Blur */
+  .bg-blur {
+    filter: blur(90px);
+  }
+  
+  

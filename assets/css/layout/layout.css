@@ -1,0 +1,53 @@
+/* estilos para estrutura do site, como cabeçalhos, rodapés, grids */
+
+
+  /* Layout */
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    position: relative;
+  }
+
+ /* Responsividade */
+ @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .container {
+      padding: 0 10px;
+    }
+  }
+
+    
+  /* Cabeçalhos e textos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Texto em negrito */
+    line-height: 1.2; /* Espaçamento compacto */
+    color: #1a1b1a;
+  }
+  
+  p {
+    margin-bottom: 1em; /* Espaçamento entre parágrafos */
+  }
+  
+  /* Elementos de formulário */
+  input, select, textarea {
+    width: 100%; /* Preenche o espaço disponível */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none; /* Remove a borda padrão ao focar */
+    border-color: #FBBA18; /* Cor de destaque */
+    box-shadow: 0 0 4px rgba(57, 57, 57, 0.5);
+  }
+  
+  
+  
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Área do Aluno</title>
+        <!-- CSS Geral Modular -->
+        <link rel="stylesheet" href="/assets/css/base/base.css">
+        <link rel="stylesheet" href="/assets/css/base/_fonts.css">
+        <link rel="stylesheet" href="/assets/css/layout.css">
+        <link rel="stylesheet" href="components/button.css">
+        <link rel="stylesheet" href="/assets/css/state.css">
+        <link rel="stylesheet" href="/assets/css/theme.css">      
+        <!-- CSS Específico -->
+        <link rel="stylesheet" href="/assets/css/styles-home.css">
+    </head>
+    <body>
+        <!--Mascote e perfil-->
+        <div class="linha">
+
+            <!--Mascote-->
+            <div class="coluna mascote-section" style="height: 500px; margin-top: 150px;">
+                <div id="texto-balao">
+                    <p style="text-align: left; margin: 5px;">
+                        Oiii <b class="cores-mascote" >Álef!</b><br>
+                        Como você está se sentindo hoje?
+                    </p>
+                    <p class="cores-mascote" style="font-size: 14px;">Clique no botão abaixo para responder </p>
+                </div>
+                <div id="balao-fala">  
+                    <img src="/assets/img/mascotes/balaopipo.svg">
+                    <div class="button" onclick="abrirPopup()">RESPONDER</div> 
+                </div>
+                <div class="linha-embaixo"></div>
+                <div class="trocar-mascote" onclick="trocarMascote()">
+                    <img class="icon" src="/assets/img/icons/trocar.png" alt="trocar">
+                    TROCAR MASCOTE
+                </div> 
+                <div class="mascote">
+                    <img src="/assets/img/mascotes/pipo.png" alt="pipo">
+                </div>   
+                
+            </div>
+
+            <!--Perfil-->
+            <div class="coluna">
+
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="path-to-image.png" alt="Foto de Álef C.">
+                    </div>
+                    <div class="profile-details">
+                        <h2>ÁLEF C.</h2>
+                        <p>ROBÓTICA II</p>
+                        <div class="score-section">
+                            <div class="score">
+                                <p>SCORE</p>
+                                <h3>9.0</h3>
+                            </div>
+                            <div class="balance">
+                                <p>SALDO</p>
+                                <h3>5470</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+
+        <!--Conteúdo aulas-->
+        <div class="linha">
+            <div class="coluna">
+
+                <div class="course-header">
+                    <button class="course-button">CURSO DE INICIAÇÃO À ROBÓTICA</button>
+                    <button class="lesson-button" id="toggleLessonButton" onclick="toggleLesson()">AULA 10 &#x25BC;</button>
+                </div>
+        
+                <div class="dropdown" id="dropdownContent">
+                    <a href="#" onclick="selectLesson('AULA 10')">AULA 10</a>
+                    <a href="#" onclick="selectLesson('AULA 9')">AULA 9</a>
+                    <a href="#" onclick="selectLesson('AULA 8')">AULA 8</a>
+                    <a href="#" onclick="selectLesson('AULA 7')">AULA 7</a>
+                </div>
+        
+                <!-- Conteúdo AULA 10 -->
+                <div class="lesson-box" id="lesson10">
+                    <div class="lesson-header">AULA 10 - GUIA DO ALUNO</div>
+                    <div class="lesson-content">
+                        <div class="experiment-icon"></div>
+                        <div class="experiment-text">Experimento: nome do experimento da aula 10</div>
+                        <button class="status-button">PARA FAZER</button>
+                    </div>
+                    <div class="lesson-header">AULA 10 - QUESTIONÁRIO</div>
+                    <div class="lesson-content">
+                        <div class="questionnaire-icon"></div>
+                        <div class="experiment-text">Questionário 10</div>
+                        <button class="completed-button">CONCLUIDO</button>
+                    </div>
+                </div>
+        
+                <!-- Conteúdo AULA 9 -->
+                <div class="lesson-box" id="lesson9" style="display: none;">
+                    <div class="lesson-header">AULA 9 - GUIA DO ALUNO</div>
+                    <div class="lesson-content">
+                        <div class="experiment-icon"></div>
+                        <div class="experiment-text">Experimento: nome do experimento da aula 9</div>
+                        <button class="status-button">PARA FAZER</button>
+                    </div>
+                    <div class="lesson-header">AULA 9 - QUESTIONÁRIO</div>
+                    <div class="lesson-content">
+                        <div class="questionnaire-icon"></div>
+                        <div class="experiment-text">Questionário 9</div>
+                        <button class="completed-button">CONCLUIDO</button>
+                    </div>
+                </div>
+        
+                <!-- Conteúdo AULA 8 -->
+                <div class="lesson-box" id="lesson8" style="display: none;">
+                    <div class="lesson-header">AULA 8 - GUIA DO ALUNO</div>
+                    <div class="lesson-content">
+                        <div class="experiment-icon"></div>
+                        <div class="experiment-text">Experimento: nome do experimento da aula 8</div>
+                        <button class="status-button">PARA FAZER</button>
+                    </div>
+                    <div class="lesson-header">AULA 8 - QUESTIONÁRIO</div>
+                    <div class="lesson-content">
+                        <div class="questionnaire-icon"></div>
+                        <div class="experiment-text">Questionário 8</div>
+                        <button class="completed-button">CONCLUIDO</button>
+                    </div>
+                </div>
+        
+                <!-- Conteúdo AULA 7 -->
+                <div class="lesson-box" id="lesson7" style="display: none;">
+                    <div class="lesson-header">AULA 7 - GUIA DO ALUNO</div>
+                    <div class="lesson-content">
+                        <div class="experiment-icon"></div>
+                        <div class="experiment-text">Experimento: nome do experimento da aula 7</div>
+                        <button class="status-button">PARA FAZER</button>
+                    </div>
+                    <div class="lesson-header">AULA 7 - QUESTIONÁRIO</div>
+                    <div class="lesson-content">
+                        <div class="questionnaire-icon"></div>
+                        <div class="experiment-text">Questionário 7</div>
+                        <button class="completed-button">CONCLUIDO</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Avaliação geral-->
+        <div class="linha">
+            <div class="coluna">
+                
+                <div class="scoreboard">
+                    <table>
+                        <tr>
+                            <th>Participação</th>
+                            <th>Pontualidade</th>
+                            <th>Desempenho nas Aulas</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>7,6</td>
+                            <td>8,2</td>
+                            <td>7,8</td>
+                            <td>7,9</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        
+        <!--Pop-up-->
+        <div class="overlay" id="overlay"></div>
+        <div class="popup" id="popup">
+            <h3>Como você está se sentindo?</h3>
+            <div class="circulos">
+                <div class="circulo" onclick="selecionarCirculo(this, 0)">
+                    <img src="/assets/img/pipomoji/1.png" alt="triste">
+                </div>
+                <div class="circulo" onclick="selecionarCirculo(this, 1)">
+                    <img src="/assets/img/pipomoji/2.png" alt="entediado">
+                </div>
+                <div class="circulo" onclick="selecionarCirculo(this, 2)">
+                    <img src="/assets/img/pipomoji/3.png" alt="normal">
+                </div>
+                <div class="circulo" onclick="selecionarCirculo(this, 3)">
+                    <img src="/assets/img/pipomoji/4.png" alt="feliz">
+                </div>
+            </div>
+            <textarea class="caixa-texto" placeholder="Escreva um pequeno texto sobre sua semana na The Wise..."></textarea>
+            <div class="button" onclick="enviarFormulario()">ENVIAR</div> 
+        </div>
+    
+
+        <script src="/assets/js/scripts-home.js"></script>
+    </body>
+</html>

@@ -1,0 +1,185 @@
+/* Os módulos representam elementos reutilizáveis dentro de uma página, como o formulário de login, logo, botão, etc.*/
+
+  /* layout */
+  .login-panel {
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    width: 40%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .absolute {
+    position: fixed;
+    top: 50% !important;
+    inset: 0;
+    justify-content: right;
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  
+  .logo {
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    right: -300px;
+    height: auto;
+    width: 300px; 
+  }
+
+  /* Rodapé */
+  footer {
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+  
+  
+  /* Responsive */
+@media (max-width: 768px) {
+    .login-panel {
+      width: 100%;
+      padding: 20px;
+      position: relative;
+      top: auto;
+      align-items: center;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .toggle-password {
+      top: 55%;
+      right: 10%;
+      position: absolute;
+    }
+  
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    /* .absolute {
+      display: none;
+    } */
+  }
+  
+
+/* Logo */
+.logo {
+    margin-bottom: 40px;
+    width: 40px;
+  }
+  
+  .password-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .password-container input {
+    width: 100%;
+    padding-right: 40px;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 53%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .toggle-password img {
+    height: 23px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 50px;
+    color: #380982;
+  }
+  
+  /* Inputs */
+  form input[type="text"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 0px solid #ccc;
+    font-size: 14px;
+    background-color: #e6e6e6;
+    box-shadow: inset rgb(187, 187, 187) 0px 0px 5px -1px;
+    outline: none;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .checkbox-container input {
+    margin-right: 5px;
+    width: 50px;
+  }
+  
+
+  .forgot-password {
+    text-align: right;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color:  #380982;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  /* Button */
+  .button {
+    background-color: #380982;
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #220550;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .button:active {
+    box-shadow: none;
+    transform: translateY(-5px);
+  }
+  
+  button:hover {
+    background-color: #460ca1;
+  }

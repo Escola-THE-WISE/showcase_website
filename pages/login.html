@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+    <!-- CSS Geral Modular -->
+    <link rel="stylesheet" href="/assets/css/base/base.css">
+    <link rel="stylesheet" href="/assets/css/base/_fonts.css">
+    <link rel="stylesheet" href="/assets/css/layout/layout.css">
+    <link rel="stylesheet" href="components/components/button.css">
+    <link rel="stylesheet" href="/assets/css/state/state.css">
+    <link rel="stylesheet" href="/assets/css/theme/theme.css">      
+    <!-- CSS Específico -->
+    <link rel="stylesheet" href="/assets/css/module/form-login.css">
+    <link rel="stylesheet" href="/assets/css/animation/animation-moving-dots.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left side: Login -->
+    <div class="login-panel">
+      <div>
+        <h2>THE WISE</h2>
+      </div>
+      <div class="login-content">
+        <h1>Bem vindo(a)!</h1>
+        <form id="loginForm" onsubmit="return validateLogin()">
+          <label for="username">Login</label>
+          <input type="text" id="username" name="username" placeholder="Digite o seu login" required>
+          <div class="password-container">
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            <span class="toggle-password" onclick="togglePasswordVisibility()">
+              <img src="/assets/img/icons/close-icon.png" alt="Mostrar senha" id="toggleIcon">
+            </span>
+          </div>
+          <a class="forgot-password" href="#">Esqueci minha senha</a>
+          <div class="checkbox-container">
+            <input type="checkbox" id="lembrar" />
+            <label for="lembrar">Lembrar de mim</label>
+          </div>
+          <!-- <label class="checkbox">
+            <input id="lembrar" type="checkbox" checked> Lembrar de mim
+          </label> -->
+          <div id="alert-box" style="margin-top: 20px;"></div>
+          <button type="submit" class="button">Entrar</button>
+        </form>
+        <footer>
+          <p>Todos os direitos reservados - The Wise 2024</p> <!-- Texto do rodapé -->
+        </footer>
+      </div>
+    </div>
+   
+    <!-- Right side: Dashboard -->
+    <div>
+      <img class="logo" src="/assets/img/logo/logo-roxa.png" alt="Logo" style="width: 140px;">
+      <div class="absolute">
+        <div class="absolute inset-0 justify">        
+          <div class="bg-shapetwo bg-pri opacity-50 bg-blur"></div>    
+          <div class="bg-shapeone bg-sec opacity-50 bg-blur"></div>    
+          <div class="bg-shapetree bg-ter opacity-50 bg-blur"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/scripts-login.js"></script>
+</body>
+</html>

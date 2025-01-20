@@ -1,0 +1,17 @@
+{
+    "alunos": [
+      {
+        "nome": "Renata",
+        "curso": "Robótica II",
+        "score": 9.0,
+        "saldo": 5470
+      },
+      {
+        "nome": "Maria",
+        "curso": "Engenharia",
+        "score": 8.5,
+        "saldo": 4200
+      }
+    ]
+  }
+  
