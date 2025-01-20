@@ -1,0 +1,14 @@
+/* Elementos de formulário */
+input, select, textarea {
+    width: 100%; /* Preenche o espaço disponível */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none; /* Remove a borda padrão ao focar */
+    border-color: #FBBA18; /* Cor de destaque */
+    box-shadow: 0 0 4px rgba(57, 57, 57, 0.5);
+}
