@@ -1,0 +1,50 @@
+@import "../base/_root.css";
+
+.l--landing-page .m--nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.l--landing-page .m--nav__logo-container{
+    width: 12%;
+}
+
+.m--nav__logo-img{
+    width: 100%;
+    min-width: 5rem;
+}
+
+.m--nav__menu-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.m--nav__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.m--nav__link{
+    color: var(--text-color-white);
+}
+
+.m--nav__link:hover{
+    color: var(--shadow-white);
+}
+
+.m--nav__login{
+    color: var(--text-color-yellow);
+    border: 1px solid var(--primary-yellow);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    transition: 0.5s;
+}
+
+.m--nav__login:hover{
+    color: var(--text-color-white);
+    background-color: var(--primary-yellow);
+    box-shadow: 0px 0px 20px var(--primary-yellow);
+}

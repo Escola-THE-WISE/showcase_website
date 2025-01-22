@@ -1,0 +1,14 @@
+@import "../base/_root.css";
+
+.l--landing-page .l--header{
+    width: 100%;
+    min-width: none;
+    height: 100vh;
+
+    padding: 2% 6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}

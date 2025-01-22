@@ -14,7 +14,7 @@
 @import 'layout/_footer.css';
 @import 'layout/_sidebar.css';
 @import 'layout/_main.css';
-@import 'layout/layout.css'; /* Distribuir Depois (fora de padrão) */
+@import 'layout/_body.css';
 
 /* Module */
 @import 'module/_button.css';
@@ -22,26 +22,16 @@
 @import 'module/_form.css';
 @import 'module/_navigation.css';
 @import 'module/_table.css';
-@import 'module/form-login.css'; /* Distribuir Depois (fora de padrão) */
 
 /* State */
 @import 'state/_is-active.css';
 @import 'state/_is-hidden.css';
 @import 'state/_is-error.css';
-@import 'state/state.css'; /* Distribuir Depois (fora de padrão) */
 
 /* Theme */
 @import 'theme/_theme-light.css';
 @import 'theme/_theme-dark.css';
-@import 'theme/theme.css'; /* Distribuir Depois (fora de padrão) */
 
 /* Animation */
 
 @import 'animation/_animation-moving-dots.css';
-
-/* Others (Fora de Padrão) */
-
-@import 'style.css';
-@import 'style-lp.css';
-@import 'style-login.css';
-@import 'style-home.css';

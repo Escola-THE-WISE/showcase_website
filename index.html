@@ -16,42 +16,67 @@
         <link rel="stylesheet" href="/assets/css/main.css">
         <link rel="shortcut icon" href="assets/img/favicons/yellow-favicon.ico" type="image/x-icon"> <!-- Gi, isso aqui é aquele ícone que fica do lado do titulo -->        
     </head>
-    <body>
-        <header>
-            <nav>
-                <div class="logo">
-                    <img src="assets/img/logo/logo-amarela-tagline.png" alt="Logo The Wise" style="width: 300px;">
+    <body class="l--landing-page">
+        <header class="l--header">
+            <!-- Barra de Navegação --> 
+            <nav class="m--nav">
+                <div class="m--nav__logo-container">
+                    <img class="m--nav__logo-img"  src="assets/img/logo/logo-amarela.png" alt="Logo The Wise">
                 </div>
-                <ul class="menu">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Depoimentos</a></li>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Metodologia</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Onde estamos</a></li>
-                </ul>
-                <a href="#" class="login-btn">Fazer Login</a>
+                <div class="m--nav__mobile-menu-container is-hidden">
+                    <!-- Local para o menu para dispositivos móveis -->
+                </div>
+                <div class="m--nav__menu-container">
+                    <ul class="m--nav__menu">
+                        <li class="m--nav__item">
+                            <a class="m--nav__link" href="#">Início</a>
+                        </li>
+                        <li class="m--nav__item">
+                            <a class="m--nav__link" href="#">Cursos</a>
+                        </li>
+                        <li class="m--nav__item">
+                            <a class="m--nav__link" href="#">Sobre</a>
+                        </li>
+                        <li class="m--nav__item">
+                            <a class="m--nav__link" href="#">Depoimentos</a>
+                        </li>
+                        <li class="m--nav__item">
+                            <a class="m--nav__link" href="#">Eventos</a>
+                        </li>
+                        <li class="m--nav__item">
+                            <a class="m--nav__link" href="#">FaQ</a>
+                        </li>
+                        <li class="m--nav__item">
+                            <a class="m--nav__link" href="#">Onde estamos</a>
+                        </li>
+                        <li class="m--nav__item">
+                            <a class="m--nav__link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="l--nav__login-container">
+                        <a href="#" class="m--nav__login">Fazer Login</a>
+                    </div>
+                </div>
             </nav>
+            <!-- Conteúdo Introdutório -->
+            <article class="m--
+            
+            
+            ">
+                <h1>Explore, Crie e Inove</h1>
+                <p>Da brincadeira ao aprendizado, a The Wise ensina robótica, tecnologia e inovação para crianças, adolescentes e jovens.</p>
+                <a href="#" class="">Agende uma visita</a>
+            </article>
         </header>
-    <div>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Explore, Crie e Inove</h1>
-                <p>Da brincadeira ao aprendizado, a The Wise ensina robótica, tecnologia e inovação para crianças, adolescentes e jovens.</p>
-                <a href="#" class="cta-btn">Agende uma visita</a>
-            </div>
-        </section>
-        <div class="transition-rect1"></div>
-        <div class="transition-rect0"></div>
-        <div class="transition-rect2"></div>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Explore, Crie e Inove</h1>
-                <p>Da brincadeira ao aprendizado, a The Wise ensina robótica, tecnologia e inovação para crianças, adolescentes e jovens.</p>
-                <a href="#" class="cta-btn">Agende uma visita</a>
-            </div>
-        </section>
-    </div>
-    <script src="/assets/js/scripts-lp.js"></script>
+        <main>
+            <!-- Todo o conteudo do site -->
+        </main>
+        <aside class="is-hidden">
+
+        </aside>
+        <footer class="is-hidden">
+
+        </footer>
+        <script src="/assets/js/scripts-lp.js"></script>
     </body>
 </html>
