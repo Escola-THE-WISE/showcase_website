@@ -1,0 +1,8 @@
+.m--article{
+
+}
+
+.m--article__title{
+    color: var(--primary-yellow);
+    line-height: var(--title-size);
+}

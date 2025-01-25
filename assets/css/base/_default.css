@@ -1,11 +1,16 @@
 @import "../base/_fonts.css";
 @import "../base/_root.css";
 
-/* Tipografia padrão */
+/* Padrões de Layout */
+*{
+    transition: 1s;
+}
+
 body {
     background-color: var(--primary-white); /* Cor padrão de background */
     color: var(--text-color-black); /* Cor padrão do texto */
 
+    /* Tipografia padrão */
     font-family: 'Maven Pro', sans-serif; /* Ou qualquer fonte usada no projeto */
     font-size: var(--text-size); /* Tamanho base */
     line-height: 1.5; /* Espaçamento entre linhas */
@@ -14,16 +19,32 @@ body {
     width: 100%;
 }
 
+header,
+main,
+aside,
+footer{
+    width: 100%;
+    display: grid;
+    padding: 0rem var(--page-content-padding);
+}
+
+
+
 
 /* Estilo básico para links */
+p a{
+    display: inline;
+}
+
 a {
-  color: var(--text-color-black);
-  text-decoration: none; /* Remove o sublinhado */
-  transition: color 0.5s ease; /* Animação suave */
+    color: var(--text-color-black);
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.5s ease; /* Animação suave */
+    display: inline-block;
 }
 
 a:hover {
-  color: #000000; /* Cor ao passar o mouse */
+    color: #000000; /* Cor ao passar o mouse */
 }
 
 /* Estilo básico para botões */

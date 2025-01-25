@@ -1,0 +1,45 @@
+.m--button{
+    padding: 1rem 2rem;
+    color: var(--text-color-black);
+    border-radius: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+}
+
+.m--button-cta,
+.m--button-yellow-default{
+    background-color: var(--primary-yellow);
+    color: var(--text-color-black);
+    box-shadow: 0 5px 0 var(--shadow-yellow);
+
+    transition: 0.2s;
+}
+
+.m--button-cta:hover,
+.button-yellow-default:hover{
+    box-shadow: 0 4px 0 var(--shadow-yellow);
+    transform: scale(1.01);
+}
+
+.m--button-cta:active,
+.button-yellow-default:active{
+    box-shadow: 0 0px 0 var(--shadow-yellow);
+    transform: scale(1.01) translateY(4px);
+}
+
+.m--button.m--button-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.m--article .m--button,
+.m--section .m--button{
+    /* Nada ainda */
+    content: '';
+}
+
+.m-button-container{
+    margin: var(--default-margin) 0;
+}

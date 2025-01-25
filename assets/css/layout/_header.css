@@ -1,14 +1,45 @@
 @import "../base/_root.css";
 
-.l--landing-page .l--header{
+.l--header{
     width: 100%;
     min-width: none;
-    height: 100vh;
-
-    padding: 2% 6rem;
 
     display: flex;
     justify-content: space-between;
     align-items: start;
     flex-direction: column;
+}
+
+.l--header-navigation{
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+
+    position: sticky;
+    top: 0;
+
+    container-type: inline-size;
+    container-name: l--header-navigation;
+
+    transition: height 1s, background-color 1s;
+
+    /* Mudanças no header quando ativado está no "assests/css/state/is-active.css" */
+}
+
+@media (max-width: 1100px){
+    .l--header-navigation{
+        height: 12rem;
+    }
+}
+
+@media (max-width: 830px){
+    .l--header-navigation{
+        height: 10rem;
+    }
+}
+
+@media (max-width: 600px){
+    .l--header-navigation{
+        height: 9rem;
+    }
 }

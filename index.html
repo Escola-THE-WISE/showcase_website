@@ -17,15 +17,23 @@
         <link rel="shortcut icon" href="assets/img/favicons/yellow-favicon.ico" type="image/x-icon"> <!-- Gi, isso aqui é aquele ícone que fica do lado do titulo -->        
     </head>
     <body class="l--landing-page">
-        <header class="l--header">
+        <header class="l--header l--header-navigation">
             <!-- Barra de Navegação --> 
-            <nav class="m--nav">
+            <nav class="m--nav no-select">
+                <!-- Logo -->
                 <div class="m--nav__logo-container">
                     <img class="m--nav__logo-img"  src="assets/img/logo/logo-amarela.png" alt="Logo The Wise">
                 </div>
-                <div class="m--nav__mobile-menu-container is-hidden">
-                    <!-- Local para o menu para dispositivos móveis -->
+                <!-- Menu Hamburguer -->
+                <div class="m--nav__mobile-menu-container">
+                    <div class="m--nav__hamburguer-menu">
+                        <span class="m--nav__hamburguer-menu-line m--nav__hamburguer-menu-line-1"></span>
+                        <span class="m--nav__hamburguer-menu-line m--nav__hamburguer-menu-line-2"></span>
+                        <span class="m--nav__hamburguer-menu-line m--nav__hamburguer-menu-line-3"></span>
+                    </div>
                 </div>
+
+                <!-- Menu -->
                 <div class="m--nav__menu-container">
                     <ul class="m--nav__menu">
                         <li class="m--nav__item">
@@ -49,27 +57,27 @@
                         <li class="m--nav__item">
                             <a class="m--nav__link" href="#">Onde estamos</a>
                         </li>
-                        <li class="m--nav__item">
-                            <a class="m--nav__link" href="#">Contato</a>
-                        </li>
                     </ul>
                     <div class="l--nav__login-container">
                         <a href="#" class="m--nav__login">Fazer Login</a>
                     </div>
                 </div>
             </nav>
-            <!-- Conteúdo Introdutório -->
-            <article class="m--
-            
-            
-            ">
-                <h1>Explore, Crie e Inove</h1>
-                <p>Da brincadeira ao aprendizado, a The Wise ensina robótica, tecnologia e inovação para crianças, adolescentes e jovens.</p>
-                <a href="#" class="">Agende uma visita</a>
-            </article>
         </header>
-        <main>
-            <!-- Todo o conteudo do site -->
+        <main class="l--main">
+            <!-- Conteúdo Introdutório -->
+            <section class="l-broad-content-section">
+                <article class="l--article-section l--article-section-33 m--article">
+                    <h1 class="m--article__title">Explore, Crie e Inove</h1>
+                    <p class="m--article__description">Da brincadeira ao aprendizado, a The Wise ensina robótica, tecnologia e inovação para crianças, adolescentes e jovens.</p>
+                    <div class="m-button-container">
+                        <a class="m--button m--button-cta no-select" href="#" class="">Agende uma visita</a>
+                    </div>
+                </article>
+            </section>
+            <sction class="l-broad-content-section">
+                
+            </sction>
         </main>
         <aside class="is-hidden">
 
@@ -77,6 +85,6 @@
         <footer class="is-hidden">
 
         </footer>
-        <script src="/assets/js/scripts-lp.js"></script>
+        <script src="/assets/js/navbar-events.js"></script>
     </body>
 </html>

@@ -1,3 +1,52 @@
 .is-active{
     display: block;
 }
+
+/* ------------------------------------------------------------------ */
+/* Menu Hamburguer */
+.m--nav__hamburguer-menu.is-active .m--nav__hamburguer-menu-line-1{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.m--nav__hamburguer-menu.is-active .m--nav__hamburguer-menu-line-2{
+    width: 0px;
+    
+}
+
+.m--nav__hamburguer-menu.is-active .m--nav__hamburguer-menu-line-3{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* ------------------------------------------------------------------ */
+/* Mobile Navbar */
+
+.l--header-navigation.is-active{
+    display: flex;
+}
+
+@media (max-width: 1100px){
+    .l--header-navigation.is-active{
+        background-color: var(--primary-white);
+        box-shadow: 0 0 50px black;
+        border-radius: 0 0 0.5rem 0.5rem;
+        height: 42rem;
+        transition: height 1s;
+
+        position: absolute;
+
+        z-index: 2;
+    }
+
+    .l--header-navigation.is-active::before{
+        /* content: ; */
+        background-color: #00000020;
+        width: 100vw;
+        height: 100vh;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: 0.1;
+    }
+}
