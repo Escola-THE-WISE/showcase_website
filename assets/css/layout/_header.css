@@ -15,8 +15,9 @@
     padding-top: 2rem;
     padding-bottom: 0rem;
 
-    position: sticky;
+    position: fixed;
     top: 0;
+    z-index: 2;
 
     container-type: inline-size;
     container-name: l--header-navigation;

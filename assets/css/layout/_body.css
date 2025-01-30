@@ -1,6 +1,3 @@
-@import "../base/_root.css";
-@import "../base/_fonts.css";
-
 .l--landing-page{
     background-color: var(--primary-purple);
     color: var(--text-color-white);
