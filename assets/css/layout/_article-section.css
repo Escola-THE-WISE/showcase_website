@@ -1,11 +1,11 @@
-.l-broad-content-section{
+.l--broad-content-section{
     width: 100%;
 }
 
 
-/* Grid */
+/* Article */
 
-.l--article-section{
+.l--article{
     display: grid;
     gap: 0.6rem;
 }

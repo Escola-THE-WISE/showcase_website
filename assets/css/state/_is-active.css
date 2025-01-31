@@ -26,13 +26,16 @@
 
 @media (max-width: 1100px){
     .l--header-navigation.is-active{
-        background-color: var(--primary-white);
-        box-shadow: 0 0 50px black;
+        background: rgba( 0, 0, 0, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border: 1px solid rgba(88, 88, 88, 0.18);
+        box-shadow: 0 0 50px #00000050;
         border-radius: 0 0 0.5rem 0.5rem;
+
         height: 42rem;
         transition: height 1s;
-
-        position: absolute;
 
         z-index: 2;
     }
@@ -48,5 +51,9 @@
         left: 0;
 
         z-index: 0.1;
+    }
+
+    .l--header-navigation.is-active .m--nav__menu-container{
+        align-items: start; /* Em is-scrooler (__states) também têm pq esse aqui por algum motivo n está funcioando */
     }
 }

@@ -40,6 +40,6 @@
     content: '';
 }
 
-.m-button-container{
+.m--button-container{
     margin: var(--default-margin) 0;
 }

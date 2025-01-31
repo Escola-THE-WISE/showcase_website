@@ -3,7 +3,9 @@
 .l--header{
     width: 100%;
     min-width: none;
+}
 
+.l--header-flex{
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -12,6 +14,7 @@
 
 .l--header-navigation{
     overflow: hidden;
+    padding: 0rem var(--page-content-padding);
     padding-top: 2rem;
     padding-bottom: 0rem;
 
@@ -27,6 +30,7 @@
     /* Mudanças no header quando ativado está no "assests/css/state/is-active.css" */
 }
 
+/* Jeito burro de mudar o tamanho */
 @media (max-width: 1100px){
     .l--header-navigation{
         height: 12rem;
@@ -43,4 +47,10 @@
     .l--header-navigation{
         height: 9rem;
     }
+}
+
+/* -------------------------------------------------------------- */
+
+.l--art-header{
+    padding: 0.5rem 0;
 }
