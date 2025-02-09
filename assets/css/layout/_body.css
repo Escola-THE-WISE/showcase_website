@@ -2,3 +2,7 @@
     background-color: var(--primary-purple);
     color: var(--text-color-white);
 }
+
+.l--landing-page p{
+    font-size: var(--text-size);
+}

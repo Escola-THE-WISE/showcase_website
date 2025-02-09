@@ -1,5 +1,13 @@
 .m--article{
+    text-align: left;
+}
 
+.m--article__align-right{
+    text-align: right;
+}
+
+.m--article__right-position-absolute{
+    
 }
 
 .m--article__title{

@@ -1,4 +1,14 @@
 :root{
+    /* Bordas Arredondadas */
+    --border-radius-small: 4px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 16px;
+
+    /* Botões */
+    --button-text-size: var(--text-size); /* 14px a 16px */
+    --button-padding: clamp(0.5rem, 1vw, 1rem);
+    
+    /* Cores */
     --primary-purple: /* #380982 */ #4C108D;
     --primary-yellow: #FFBC01;
     --primary-white: #f5f5f7;
@@ -12,32 +22,33 @@
     --text-color-purple: var(--primary-purple);
     --text-color-yellow : var(--primary-yellow);
 
-    --title-size: 3rem; /* Equivale a 48px */
-    --sub-title-size: 2.25rem; /* Equivale a 36px */
-    --large-text-size: 1.25rem; /* Equivale a 20px */
-    --text-size: 1rem; /* Equivale a 16px */
-    --small-text-size: 0.75rem; /* Equivale a 12px */
+    /* Grid e Flex responsivos */
+    --grid-gap: clamp(0.5rem, 2vw, 1.5rem);
 
-    --large-margin: 1.5rem;
-    --default-margin: 1rem;
-    --small-margin: 1rem;
+    /* Margens e espaçamentos ajustáveis */
+    --large-margin: clamp(0.75rem, 2vw, 1.5rem); /* 12px a 24px */
+    --default-margin: clamp(0.5rem, 1.5vw, 1rem); /* 8px a 16px */
+    --small-margin: clamp(0.25rem, 1vw, 1rem); /* 4px a 12px */
 
-    --page-content-padding: 7%;
-}
+    /* Padding responsivo */
+    --page-content-padding: clamp(5%, 6vw, 7%);
 
-@media (max-width: 500px){
-    /* 75% do valor padrão */
-    :root {
-        --title-size: 2.25rem; /* Equivale a 36px */
-        --sub-title-size: 1.69rem; /* Equivale a ~27px */
-        --large-text-size: 0.94rem; /* Equivale a ~15px */
-        --text-size: 0.75rem; /* Equivale a 12px */
-        --small-text-size: 0.56rem; /* Equivale a ~9px */
+    /* Sombras */
+    --box-shadow-light: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    --box-shadow-medium: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    --box-shadow-dark: 0px 6px 15px rgba(0, 0, 0, 0.3);
 
-        --large-margin: 0.75rem;
-        --default-margin: 0.5rem;
-        --small-margin: 0.25rem;
+    /* Títulos e paragrafos escaláveis */
+    --title-size: clamp(2.25rem, 4vw, 3rem); /* 36px a 48px */
+    --sub-title-size: clamp(1.69rem, 3vw, 2.25rem); /* 27px a 36px */
 
-        --page-content-padding: 5%;
-    }    
+    --large-text-size: clamp(1.125rem, 2vw, 1.5rem); /* 18px a 24px */
+    --text-size: clamp(0.94rem, 2vw, 1.25rem); /* 15px a 20px */
+    --small-text-size: clamp(0.75rem, 1.5vw, 1rem); /* 12px a 16px */
+
+    --caption-text-size: clamp(0.75rem, 1vw, 0.875rem); /* 12px a 14px */
+
+        /* Linha do texto */
+        --line-height: 1.5;
+        --small-line-height: 1;
 }

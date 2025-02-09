@@ -9,3 +9,16 @@
 @import '_section.css';
 
 /* Outros Módulos */
+
+.m--banner-container{
+    background-color: var(--shadow-purple);
+    width: 100%;
+}
+
+.m--banner-container-16-9{
+    aspect-ratio: 16 / 9;
+}
+
+.m--banner-container-3-4{
+    aspect-ratio: 3 / 4;
+}

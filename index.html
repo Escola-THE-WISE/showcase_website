@@ -14,7 +14,7 @@
         
         <!-- Links externos -->
         <link rel="stylesheet" href="/assets/css/main.css">
-        <link rel="shortcut icon" href="assets/img/favicons/yellow-favicon.ico" type="image/x-icon"> <!-- Gi, isso aqui é aquele ícone que fica do lado do titulo -->        
+        <link rel="shortcut icon" href="assets/img/favicons/yellow-favicon.ico" type="image/x-icon"> <!-- isso aqui é aquele ícone que fica do lado do titulo -->        
     </head>
     <body class="l--landing-page">
         <header class="l--header l--header-flex l--header-navigation ">
@@ -40,22 +40,25 @@
                             <a class="m--nav__link" href="#">Início</a>
                         </li>
                         <li class="m--nav__item">
-                            <a class="m--nav__link" href="#">Cursos</a>
+                            <a class="m--nav__link" href="#apresentacao">Sobre</a>
                         </li>
                         <li class="m--nav__item">
-                            <a class="m--nav__link" href="#">Sobre</a>
+                            <a class="m--nav__link" href="#cursos">Cursos</a>
                         </li>
                         <li class="m--nav__item">
-                            <a class="m--nav__link" href="#">Depoimentos</a>
+                            <a class="m--nav__link" href="#metodologia">Metodologia</a>
                         </li>
                         <li class="m--nav__item">
-                            <a class="m--nav__link" href="#">Eventos</a>
+                            <a class="m--nav__link" href="#depoimentos">Depoimentos</a>
                         </li>
                         <li class="m--nav__item">
-                            <a class="m--nav__link" href="#">FaQ</a>
+                            <a class="m--nav__link" href="#eventos">Eventos</a>
                         </li>
                         <li class="m--nav__item">
-                            <a class="m--nav__link" href="#">Onde estamos</a>
+                            <a class="m--nav__link" href="#FaQ">FaQ</a>
+                        </li>
+                        <li class="m--nav__item">
+                            <a class="m--nav__link" href="#localizacao">Onde estamos</a>
                         </li>
                     </ul>
                     <div class="l--nav__login-container">
@@ -66,9 +69,9 @@
         </header>
         <main class="l--main">
             <!-- Conteúdo Introdutório -->
-            <section id="" class="l--broad-content-section l--hero">
+            <section id="introducao" class="l--section-broad-content l--hero">
                 <article class="l--article l--article-section-33 m--article">
-                    <header>
+                    <header class="m--article__title-container">
                         <h1 class="m--article__title">Explore, Crie e Inove</h1>
                     </header>
                     <div class="m--article__content-container">
@@ -81,55 +84,55 @@
             </section>
 
             <!-- Apresentação -->
-            <section id="" class="l--broad-content-section">
-                <figure>
-                    <img src="" alt="imagem ilustrativa">
+            <section id="apresentacao" class="l--section-broad-content l--section__right-align">
+                <figure class="m--banner-container m--banner-container-16-9">
+                    <img class="m--banner" src="" alt="imagem ilustrativa">
                 </figure>
-                <article class="l--article m--article">
-                    <header class=".m--article__title-container">
-                        <h1 class=".m--article__title">A The Wise prepara o seu filho pro futuro</h1>
+                <article class="l--article l--article-section-50 m--article m--article__align-right u--translateY--50">
+                    <header class="m--article__title-container">
+                        <h1 class="m--article__title">A The Wise prepara o seu filho pro futuro</h1>
                     </header>
-                    <div>
-                        <p>No mundo de hoje, habilidades em robótica e programação são tão importantes quanto ler e escrever.</p>
-                        <p>Segundo o Fórum Econômico Mundial, até 2025, <strong> mais de 75% das profissões emergentes exigirão conhecimentos em tecnologia e automação.</strong></p>
-                        <p>Aprender desde cedo coloca seu filho à frente, desenvolvendo raciocínio lógico, criatividade e habilidades para solucionar problemas complexos.</p>
+                    <div class="m--article__content-container">
+                        <p class="m--article__content">No mundo de hoje, habilidades em robótica e programação são tão importantes quanto ler e escrever.</p>
+                        <p class="m--article__content">Segundo o Fórum Econômico Mundial, até 2025, <strong> mais de 75% das profissões emergentes exigirão conhecimentos em tecnologia e automação.</strong></p>
+                        <p class="m--article__content">Aprender desde cedo coloca seu filho à frente, desenvolvendo raciocínio lógico, criatividade e habilidades para solucionar problemas complexos.</p>
                     </div>
                 </article>
             </section>
 
             <!-- Cursos -->
-            <section class="l--broad-content-section">  
-                <header>
-                    <h2>Cursos</h2> 
+            <section id="cursos" class="l--section-broad-content is-hidden">  
+                <header class="m--section__title-container">
+                    <h2 class="m--section__title">Cursos</h2> 
                 </header>
-                <div>
+                <div class="l--section__card-section">
                     <!-- Cards -->
-                    <div>
+                    <div class="l--section__card">
                         <!-- CARD -->
-                        <article>
-                            <header>
-                                <div>
-                                    <img src="" alt="">
+                        <article class="m--card">
+                            <header class="m--card__title-container">
+                                <div class="m--card__banner-image-container">
+                                    <img class="m--card__banner-image" src="" alt="">
                                 </div>
-                                <h3>Acompanhamento Pedagógico</h3>
+                                <h3 class="m--card__title">Acompanhamento Pedagógico</h3>
                             </header>
-                            <div>
-                                <p>Desenvolvimento cognitivo, oralidade, leitura, escrita e raciocínio lógico matemático, com uso da arte, jogos e tecnologia.</p>
+                            <div class="m--card__content-container">
+                                <p class="m--card__content">Desenvolvimento cognitivo, oralidade, leitura, escrita e raciocínio lógico matemático, com uso da arte, jogos e tecnologia.</p>
                             </div>
-                            <footer>
-                                <button></button>
-                                <div></div>
+                            <footer class="m--card__footer">
+                                <button  class="m--button m--button-view-portfolio no-select">Portfólio</button>
+                                <a class="m--button-ig" href=""></a>
                             </footer>
                         </article>
 
                         <!-- POP-UP -->
-                         <div class="is-hidden">
-                            <article>
-                                <header>
+                         <div class=" m--popup-background is-hidden">
+                            <article class="m--popup">
+                                <header class="m--article__title-container">
                                     <div>
                                         <img src="" alt="">
                                     </div>
-                                    <h3>Acompanhamento Pedagógico</h3>
+                                    <h3 class="m--article__title">Acompanhamento Pedagógico</h3>
                                 </header>
                                 <div>
                                     <p>Desenvolvimento cognitivo, oralidade, leitura, escrita e raciocínio lógico matemático, com uso da arte, jogos e tecnologia.</p>
@@ -144,7 +147,7 @@
             </section>
 
             <!-- Metodologia -->
-            <section class="l--broad-content-section">
+            <section id="metodologia" class="l--section-broad-content l--section__grid-wrap">
                 <article>
                     <header>
                         <h1>Transformamos aprendizado em diversão</h1>
@@ -155,14 +158,14 @@
                         <p>O atendimento individualizado e o ambiente seguro garantem que cada criança desenvolva habilidades essenciais para o futuro de forma divertida e eficaz.</p>
                     </div>
                 </article>
-                <figure>
-                    <img src="" alt="">
+                <figure class="m--banner-container m--banner-container-3-4">
+                    <img class="m--banner" src="" alt="">
                     <figcaption>Foto da escola e dos alunos</figcaption>
                 </figure>
             </section>
 
             <!-- Depoimentos -->
-            <section class="l--broad-content-section">
+            <section id="depoimentos" class="l--section-broad-content is-hidden">
                 <header>
                     <h2>Depoimento dos pais</h2>
                 </header>
@@ -192,12 +195,12 @@
             </section>
 
             <!-- Eventos -->
-            <section class="l--broad-content-section">
+            <section id="eventos" class="l--section-broad-content is-hidden">
 
             </section>
 
             <!-- Perguntas Frequentes -->
-            <section class="l--broad-content-section">
+            <section id="FaQ" class="l--section-broad-content is-hidden">
                 <header>
                     <h1>Perguntas Frequências</h1>
                 </header>
@@ -234,7 +237,7 @@
             </section>
 
             <!-- Localização -->
-            <section class="l--broad-content-section">
+            <section id="localizacao" class="l--section-broad-content is-hidden">
                 <section>
                     <div>
 

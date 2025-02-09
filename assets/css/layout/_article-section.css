@@ -1,5 +1,16 @@
-.l--broad-content-section{
+.l--section-broad-content{
     width: 100%;
+    display: grid;
+    position: relative;
+}
+
+.l--section__right-align{
+    justify-items: end;
+}
+
+.l--section__grid-wrap{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--large-margin);
 }
 
 
@@ -22,6 +33,7 @@
 
 .l--article-section-50{ /* (2/4) */
     width: 50%;
+    min-width: 300px;
 }
 
 .l--article-section-66{ /* (2/3) */

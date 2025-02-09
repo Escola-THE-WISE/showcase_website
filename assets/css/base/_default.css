@@ -1,4 +1,7 @@
 /* Padrões de Layout */
+*{
+    
+}
 
 body {
     background-color: var(--primary-white); /* Cor padrão de background */
@@ -77,7 +80,8 @@ h3{
 }
 
 p{
-    font-size: var(--large-text-size);
+    font-size: var(--text-size);
     font-weight: 500;
     overflow-wrap: break-word;
+    text-wrap: balance;
 }

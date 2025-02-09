@@ -1,0 +1,8 @@
+.m--section{
+    
+}
+
+.m--section__title{
+    color: var(--primary-yellow);
+    line-height: var(--title-size);
+}

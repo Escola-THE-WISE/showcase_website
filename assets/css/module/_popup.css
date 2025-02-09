@@ -1,0 +1,32 @@
+.m--popup-background{
+    background: rgba( 0, 0, 0, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border: 1px solid rgba(88, 88, 88, 0.18);
+    box-shadow: 0 0 50px #00000050;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 3;
+}
+
+.m--popup{
+    background-color: var(--primary-white);
+    border: 1px solid var(--shadow-white);
+    max-width: 60%;
+    max-height: 80%;
+    border-radius: 10px;
+
+    overflow-x: hidden;
+}
