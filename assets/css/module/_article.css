@@ -6,11 +6,17 @@
     text-align: right;
 }
 
-.m--article__right-position-absolute{
-    
-}
-
 .m--article__title{
     color: var(--primary-yellow);
     line-height: var(--title-size);
+
+}
+
+.l--hero .m--article__title{
+    font-size: var(--hero-title-size);
+    line-height: var(--hero-title-size);
+}
+
+.m--article__content-container{
+    display: grid;
 }

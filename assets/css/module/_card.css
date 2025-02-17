@@ -1,0 +1,21 @@
+.m--card{
+    background-color: var(--primary-white);
+    padding: var(--default-padding);
+    border-radius: var(--border-radius-medium);
+
+    display: grid;
+}
+
+.m--card__title-container{
+    color: var(--text-color-purple);
+    text-align: center;
+}
+
+.m--card__title{
+    font-weight: 900;
+}
+
+.m--card__content-container{
+    color: var(--text-color-black);
+    text-align: center;
+}

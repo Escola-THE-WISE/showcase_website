@@ -19,7 +19,7 @@
 
     --text-color-white: var(--primary-white);
     --text-color-black: #1a1b1a;
-    --text-color-purple: var(--primary-purple);
+    --text-color-purple: var(--shadow-purple);
     --text-color-yellow : var(--primary-yellow);
 
     /* Grid e Flex responsivos */
@@ -30,8 +30,12 @@
     --default-margin: clamp(0.5rem, 1.5vw, 1rem); /* 8px a 16px */
     --small-margin: clamp(0.25rem, 1vw, 1rem); /* 4px a 12px */
 
-    /* Padding responsivo */
+    /* Padding */
     --page-content-padding: clamp(5%, 6vw, 7%);
+
+    --large-padding: clamp(0.75rem, 2vw, 1.5rem); /* 12px a 24px */
+    --default-padding: clamp(0.5rem, 1.5vw, 1rem); /* 8px a 16px */
+    --small-padding: clamp(0.25rem, 1vw, 1rem); /* 4px a 12px */
 
     /* Sombras */
     --box-shadow-light: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -39,7 +43,8 @@
     --box-shadow-dark: 0px 6px 15px rgba(0, 0, 0, 0.3);
 
     /* Títulos e paragrafos escaláveis */
-    --title-size: clamp(2.25rem, 4vw, 3rem); /* 36px a 48px */
+    --hero-title-size: clamp(2.25rem, 4vw, 3rem); /* 36px a 48px */
+    --title-size: clamp(1.69rem, 3vw, 2.25rem); /* 36px a 48px */
     --sub-title-size: clamp(1.69rem, 3vw, 2.25rem); /* 27px a 36px */
 
     --large-text-size: clamp(1.125rem, 2vw, 1.5rem); /* 18px a 24px */
@@ -51,4 +56,11 @@
         /* Linha do texto */
         --line-height: 1.5;
         --small-line-height: 1;
+
+    /* ViewPort (Breakpoints)*/
+
+    --phone-viewport: 480px;
+    --tablet-viewport: 768px;
+    --laptop-viewport: 1280px;
+    --desktop-viewport: 100vw;
 }

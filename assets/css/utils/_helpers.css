@@ -2,6 +2,6 @@
     background-color: aqua;
 }
 
-.u--translateY--50{
-    transform: translateY(-50%);
+.u--gap-1rem{
+    gap: 1rem;
 }
