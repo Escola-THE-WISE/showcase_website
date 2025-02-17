@@ -17,7 +17,7 @@
     background-position: right;
 
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     min-height: 650px;
     padding: 5% var(--page-content-padding);
 

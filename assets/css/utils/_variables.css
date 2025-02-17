@@ -5,9 +5,10 @@
     --border-radius-large: 16px;
 
     /* Botões */
-    --button-text-size: var(--text-size); /* 14px a 16px */
-    --button-padding: clamp(0.5rem, 1vw, 1rem);
-    
+    --button-text-size: clamp(0.85rem, 1.75vw, 1.125rem); /* 13.6px a 18px */
+    --button-padding: clamp(0.8rem, 1.2vw, 1rem) clamp(1.5rem, 2.5vw, 2rem);
+    --h-large-button-padding: clamp(0.8rem, 1vw, 1rem) clamp(2.5rem, 3.5vw, 4rem);
+
     /* Cores */
     --primary-purple: /* #380982 */ #4C108D;
     --primary-yellow: #FFBC01;
@@ -45,7 +46,7 @@
     /* Títulos e paragrafos escaláveis */
     --hero-title-size: clamp(2.25rem, 4vw, 3rem); /* 36px a 48px */
     --title-size: clamp(1.69rem, 3vw, 2.25rem); /* 36px a 48px */
-    --sub-title-size: clamp(1.69rem, 3vw, 2.25rem); /* 27px a 36px */
+    --small-title-size: clamp(1.25rem, 2.5vw, 1.75rem); /* 20px a 28px */
 
     --large-text-size: clamp(1.125rem, 2vw, 1.5rem); /* 18px a 24px */
     --text-size: clamp(0.94rem, 2vw, 1.25rem); /* 15px a 20px */

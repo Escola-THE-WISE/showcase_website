@@ -1,10 +1,17 @@
 .m--button{
-    padding: 1rem 2rem;
+    padding: var(--button-padding);
     color: var(--text-color-black);
-    border-radius: 2rem;
     font-weight: 600;
+    font-size: var(--button-text-size);
     text-transform: uppercase;
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius-medium);
+}
+
+.m--card__footer .m--button{
+    background-color: transparent;
+    border: 3px solid var(--shadow-purple);
+    color: var(--shadow-purple);
+    flex-grow: 1;
 }
 
 .m--button-cta,
@@ -31,13 +38,14 @@
 .m--button.m--button-icon{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 0.5rem;
 }
 
 .m--article .m--button,
 .m--section .m--button{
     /* Nada ainda */
-    content: '';
 }
 
 .m--button-container{

@@ -1,8 +1,4 @@
 /* Padrões de Layout */
-*{
-    
-}
-
 body {
     background-color: var(--primary-white); /* Cor padrão de background */
     color: var(--text-color-black); /* Cor padrão do texto */
@@ -51,14 +47,18 @@ a:hover {
 
 /* Estilo básico para botões */
 button {
-    font-family: inherit; /* Usa a mesma fonte do texto */
-    font-size: 1rem;
-    background-color: #FBBA18;
-    color: #fff;
+    background-color: var(--primary-yellow);
+    color: var(--text-color-black);
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px; /* Bordas arredondadas */
+    border-radius: var(--border-radius-medium);
+    padding: var(--button-padding);
     cursor: pointer;
+    text-transform: uppercase;
+    
+    font-family: inherit; /* Usa a mesma fonte do texto */
+    font-size: var(--button-text-size);
+    font-weight: 600;
+
     transition: background-color 0.3s ease;
 }
   
@@ -70,7 +70,7 @@ h1{
 }
 
 h2{
-    font-size: var(--sub-title-size);
+    font-size: var(--title-size);
     font-weight: 800;
 }
 

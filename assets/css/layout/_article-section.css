@@ -32,9 +32,9 @@
 }
 
 .l--section__card-section{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    display: flex;
     gap: var(--grid-gap);
+    overflow-x: scroll;
 }
 
 /* Article */
