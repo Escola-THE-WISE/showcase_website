@@ -11,3 +11,16 @@
 li{
     list-style: none;
 }
+
+summary {
+    list-style: none; /* Remove a seta no Firefox */
+}
+  
+summary::-webkit-details-marker {
+    display: none; /* Remove a seta no Chrome e Safari */
+}
+  
+  summary::marker {
+    display: none; /* Remove a seta em navegadores mais novos */
+}
+  

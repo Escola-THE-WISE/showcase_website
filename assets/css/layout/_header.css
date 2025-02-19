@@ -1,7 +1,7 @@
 @import "../base/_root.css";
 
 .l--header{
-    width: 100%;
+    width: 100vw;
     min-width: none;
 }
 
@@ -28,6 +28,13 @@
     transition: height 1s, background-color 1s;
 
     /* Mudanças no header quando ativado está no "assests/css/state/is-active.css" */
+}
+
+@media (min-width: 1400px){
+    .l--header-navigation{
+        display: grid;
+        justify-content: center;
+    }
 }
 
 /* Jeito burro de mudar o tamanho */

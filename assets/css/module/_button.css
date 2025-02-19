@@ -9,7 +9,8 @@
 
 .m--card__footer .m--button{
     background-color: transparent;
-    border: 3px solid var(--shadow-purple);
+    padding: var(--small-button-padding);
+    border: 2px solid var(--shadow-purple);
     color: var(--shadow-purple);
     flex-grow: 1;
 }

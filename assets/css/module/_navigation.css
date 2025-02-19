@@ -17,6 +17,13 @@
     font-size: var(--small-text-size);
 }
 
+@media (min-width: 1400px){
+    .m--nav{
+        width: 1400px;
+        padding: 0 var(--page-content-padding);
+    }
+}
+
 .m--nav__logo-container{
     height: 12vw;
 
