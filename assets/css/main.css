@@ -1,7 +1,7 @@
 
 
 /* Base */
-@import 'base/__base.css';
+@import url('base/__base.css');
 
 /* Layout */
 @import 'layout/__layouts.css';

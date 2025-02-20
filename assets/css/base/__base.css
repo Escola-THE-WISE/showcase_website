@@ -1,5 +1,5 @@
 /* Importações */
 
-@import '_reset.css';
-@import '_typography.css';
-@import '_default.css';
+@import url('_reset.css');
+@import url('_typography.css');
+@import url('_default.css');
