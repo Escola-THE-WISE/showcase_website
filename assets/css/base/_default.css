@@ -1,4 +1,31 @@
 /* Padrões de Layout */
+/* Tamanho da barra de rolagem */
+*{
+    scrollbar-width: thin;
+    scrollbar-color: var(--shadow-purple) transparent;
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: auto;
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Largura */
+}
+  
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0;
+}
+  
+/* Cor do scroll */
+::-webkit-scrollbar-thumb {
+    background: var(--shadow-purple);
+    border-radius: 0px;
+}
+
 body {
     background-color: var(--primary-white); /* Cor padrão de background */
     color: var(--text-color-black); /* Cor padrão do texto */
