@@ -1,28 +1,24 @@
 /* Base */
-@import url('base/__base.css');
+@import url('/assets/css/base/__base.css');
 
 /* Layout */
-@import url('layout/__layouts.css');
+@import url('/assets/css/layout/__layouts.css');
 
 /* Module */
-@import url('module/__modules.css');
+@import url('/assets/css/module/__modules.css');
 
 /* State */
-@import url('state/__states.css');
+@import url('/assets/css/state/__states.css');
 
 /* Theme */
-@import url('theme/_theme-light.css');
-@import url('theme/_theme-dark.css');
-@import url('theme/_theme-gray.css');
+@import url('/assets/css/theme/_theme-light.css');
+@import url('/assets/css/theme/_theme-dark.css');
+@import url('/assets/css/theme/_theme-gray.css');
 
 /* Utils */
-@import url('utils/_variables.css');
-@import url('utils/_mixins.css');
-@import url('utils/_helpers.css');
+@import url('/assets/css/utils/_variables.css');
+@import url('/assets/css/utils/_mixins.css');
+@import url('/assets/css/utils/_helpers.css');
 
 /* Animation */
-@import url('animation/_animation-moving-dots.css');
-
-body{
-    background-color: blue;
-}
+@import url('/assets/css/animation/_animation-moving-dots.css');
