@@ -51,10 +51,22 @@
     gap: var(--grid-gap);
 }
 
+.l--section__card-section::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
 .l--section__details-section{
     display: grid;
     gap: var(--grid-gap);
     width: 100%;
+}
+
+.l--section__location{
+    background-image: url(../../img/bg-images/localização.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
 }
 
 /* Article */

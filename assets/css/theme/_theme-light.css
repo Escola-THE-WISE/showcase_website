@@ -1,0 +1,14 @@
+.theme-light .l--section-broad-content,
+.theme-light.l--section-broad-content{
+    background-color: #e6e6e6;
+    box-shadow: inset 0 0 10px 0px #00000080;
+}
+
+.theme-light .m--section__title{
+    color: var(--shadow-purple);
+}
+
+.theme-light .m--details{
+    background-color: #cccccc;
+    color: var(--primary-black);
+}  

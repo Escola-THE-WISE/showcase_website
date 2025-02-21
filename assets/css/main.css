@@ -1,25 +1,24 @@
-
-
 /* Base */
 @import url('base/__base.css');
 
 /* Layout */
-@import 'layout/__layouts.css';
+@import url('layout/__layouts.css');
 
 /* Module */
-@import 'module/__modules.css';
+@import url('module/__modules.css');
 
 /* State */
-@import 'state/__states.css';
+@import url('state/__states.css');
 
 /* Theme */
-@import 'theme/_theme-light.css';
-@import 'theme/_theme-dark.css';
+@import url('theme/_theme-light.css');
+@import url('theme/_theme-dark.css');
+@import url('theme/_theme-gray.css');
 
 /* Utils */
-@import 'utils/_variables.css';
-@import 'utils/_mixins.css';
-@import 'utils/_helpers.css';
+@import url('utils/_variables.css');
+@import url('utils/_mixins.css');
+@import url('utils/_helpers.css');
 
 /* Animation */
-@import 'animation/_animation-moving-dots.css';
+@import url('animation/_animation-moving-dots.css');

@@ -1,8 +1,8 @@
 /* Importações */
 
-@import '_is-active.css';
-@import '_is-hidden.css';
-@import '_is-error.css';
+@import url('_is-active.css');
+@import url('_is-hidden.css');
+@import url('_is-error.css');
 
 /* Outros Estados */
 

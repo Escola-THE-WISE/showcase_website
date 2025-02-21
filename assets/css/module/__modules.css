@@ -1,19 +1,31 @@
 /* Importações */
 
-@import '_button.css';
-@import '_card.css';
-@import '_form.css';
-@import '_navigation.css';
-@import '_table.css';
-@import '_article.css';
-@import '_section.css';
-@import '_details.css';
+@import url('_button.css');
+@import url('_card.css');
+@import url('_form.css');
+@import url('_navigation.css');
+@import url('_table.css');
+@import url('_article.css');
+@import url('_section.css');
+@import url('_details.css');
 
 /* Outros Módulos */
 
 .m--banner-container{
     background-color: var(--shadow-purple);
     width: 100%;
+}
+
+.l--section__location .m--banner-container{
+    aspect-ratio: 3 / 2;
+}
+
+.m--banner-container__transparent{
+    background-color: transparent;
+}
+
+.l--section__location{
+    
 }
 
 .m--banner-container-16-9{

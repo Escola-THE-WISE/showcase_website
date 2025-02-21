@@ -1,12 +1,12 @@
 /* Importações */
 
-@import '_grid.css';
-@import '_header.css';
-@import '_footer.css';
-@import '_sidebar.css';
-@import '_main.css';
-@import '_body.css';
-@import '_article-section.css';
+@import url('_grid.css');
+@import url('_header.css');
+@import url('_footer.css');
+@import url('_sidebar.css');
+@import url('_main.css');
+@import url('_body.css');
+@import url('_article-section.css');
 
 /* Outros Layouts */
 

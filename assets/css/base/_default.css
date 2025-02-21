@@ -1,8 +1,8 @@
 /* Padrões de Layout */
 /* Tamanho da barra de rolagem */
 *{
-    scrollbar-width: thin;
-    scrollbar-color: var(--shadow-purple) transparent;
+    scroll-snap-align: center;
+    scroll-margin: 22vh;
 }
 
 html{
@@ -11,7 +11,8 @@ html{
 }
 
 ::-webkit-scrollbar {
-    width: 12px; /* Largura */
+    background-color: var(--shadow-purple);
+    width: 1rem; /* Largura */
 }
   
 /* Fundo da barra de rolagem */
@@ -22,7 +23,7 @@ html{
   
 /* Cor do scroll */
 ::-webkit-scrollbar-thumb {
-    background: var(--shadow-purple);
+    background: var(--shadow-yellow);
     border-radius: 0px;
 }
 
@@ -41,6 +42,9 @@ body {
 
     overflow-x: hidden;
     overflow-anchor: none;
+
+    /* scrollbar-width: auto;
+    scrollbar-color: var(--shadow-yellow) var(--shadow-purple); */
 }
 
 @media (min-width: 1400px){
@@ -122,4 +126,10 @@ p{
     font-weight: 500;
     overflow-wrap: break-word;
     text-wrap: balance;
+}
+
+/* Estilo Básico de Imagens */
+
+img{
+    max-width: 100%;
 }

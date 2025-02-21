@@ -15,6 +15,14 @@
     flex-grow: 1;
 }
 
+.m--card__location .m--button{
+    background-color: transparent;
+    padding: var(--small-padding);
+    border: 1px solid var(--primary-black);
+    color: var(--primary-black);
+    font-size: var(--small-text-size);
+}
+
 .m--button-cta,
 .m--button-yellow-default{
     background-color: var(--primary-yellow);
