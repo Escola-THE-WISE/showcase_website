@@ -1,12 +1,12 @@
 /* Importações */
 
-@import url('/assets/css/layout/_grid.css');
-@import url('/assets/css/layout/_header.css');
-@import url('/assets/css/layout/_footer.css');
-@import url('/assets/css/layout/_sidebar.css');
-@import url('/assets/css/layout/_main.css');
-@import url('/assets/css/layout/_body.css');
-@import url('/assets/css/layout/_article-section.css');
+@import url('/assets/css/layout/grid.css');
+@import url('/assets/css/layout/header.css');
+@import url('/assets/css/layout/footer.css');
+@import url('/assets/css/layout/sidebar.css');
+@import url('/assets/css/layout/main.css');
+@import url('/assets/css/layout/body.css');
+@import url('/assets/css/layout/article-section.css');
 
 /* Outros Layouts */
 

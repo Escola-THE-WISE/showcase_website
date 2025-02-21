@@ -1,13 +1,13 @@
 /* Importações */
 
-@import url('/assets/css/module/_button.css');
-@import url('/assets/css/module/_card.css');
-@import url('/assets/css/module/_form.css');
-@import url('/assets/css/module/_navigation.css');
-@import url('/assets/css/module/_table.css');
-@import url('/assets/css/module/_article.css');
-@import url('/assets/css/module/_section.css');
-@import url('/assets/css/module/_details.css');
+@import url('/assets/css/module/button.css');
+@import url('/assets/css/module/card.css');
+@import url('/assets/css/module/form.css');
+@import url('/assets/css/module/navigation.css');
+@import url('/assets/css/module/table.css');
+@import url('/assets/css/module/article.css');
+@import url('/assets/css/module/section.css');
+@import url('/assets/css/module/details.css');
 
 /* Outros Módulos */
 
