@@ -22,3 +22,7 @@
 
 /* Animation */
 @import url('animation/_animation-moving-dots.css');
+
+body{
+    background-color: blue;
+}
