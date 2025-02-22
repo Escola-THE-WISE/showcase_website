@@ -1,24 +1,24 @@
 /* Base */
-@import url('/assets/css/base/base.css');
+@import url('base/base.css');
 
 /* Layout */
-@import url('/assets/css/layout/layouts.css');
+@import url('layout/layouts.css');
 
 /* Module */
-@import url('/assets/css/module/modules.css');
+@import url('module/modules.css');
 
 /* State */
-@import url('/assets/css/state/states.css');
+@import url('state/states.css');
 
 /* Theme */
-@import url('/assets/css/theme/theme-light.css');
-@import url('/assets/css/theme/theme-dark.css');
-@import url('/assets/css/theme/theme-gray.css');
+@import url('theme/theme-light.css');
+@import url('theme/theme-dark.css');
+@import url('theme/theme-gray.css');
 
 /* Utils */
-@import url('/assets/css/utils/_variables.css');
-@import url('/assets/css/utils/_mixins.css');
-@import url('/assets/css/utils/_helpers.css');
+@import url('utils/variables.css');
+@import url('utils/mixins.css');
+@import url('utils/helpers.css');
 
 /* Animation */
-@import url('/assets/css/animation/animation-moving-dots.css');
+@import url('animation/animation-moving-dots.css');

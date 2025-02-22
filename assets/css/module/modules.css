@@ -1,13 +1,13 @@
 /* Importações */
 
-@import url('/assets/css/module/button.css');
-@import url('/assets/css/module/card.css');
-@import url('/assets/css/module/form.css');
-@import url('/assets/css/module/navigation.css');
-@import url('/assets/css/module/table.css');
-@import url('/assets/css/module/article.css');
-@import url('/assets/css/module/section.css');
-@import url('/assets/css/module/details.css');
+@import url('button.css');
+@import url('card.css');
+@import url('form.css');
+@import url('navigation.css');
+@import url('table.css');
+@import url('article.css');
+@import url('section.css');
+@import url('details.css');
 
 /* Outros Módulos */
 
@@ -25,6 +25,7 @@
 }
 
 .m--banner-container-16-9{
+    max-width: 1200px;
     aspect-ratio: 16 / 9;
 }
 
