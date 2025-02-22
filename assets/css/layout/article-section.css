@@ -1,3 +1,7 @@
+.l--section-background{
+    width: 100vw;
+}
+
 .l--section-broad-content{
     width: 100%;
     display: grid;
@@ -12,6 +16,54 @@
         justify-content: center;
     }
 }
+
+@media (min-width: 1500px){
+    .l--section-background{
+        display: grid;
+        justify-items: center;
+    }
+
+    .l--section-broad-content{
+        width: 1200px;
+    }
+}
+
+/* ------------------------------------------------------- */
+/* Hero */
+
+.l--section__hero{
+    background-image: url(../../img/bg-images/colar.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+
+    width: 100%;
+    height: 100svh;
+    min-height: 650px;
+    max-height: 900px;
+    padding: 5% var(--page-content-padding);
+
+    position: relative;
+}
+
+.l--section__hero .l--section-broad-content{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 100%;
+}
+
+@media (max-width: 750px) {
+    .l--hero{
+        background-size: auto 50%;
+        background-position: right;
+
+        padding: 30% var(--page-content-padding);
+    }
+}
+
+/* ------------------------------------------------------- */
+/* Utils*/
 
 .l--section__right-align{
     justify-items: end;
@@ -42,6 +94,8 @@
         transform: translateY(0px);
     }
 }
+
+/* ------------------------------------------------------- */
 
 .l--section__card-section{
     width: 100%;

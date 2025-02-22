@@ -47,17 +47,6 @@ body {
     scrollbar-color: var(--shadow-yellow) var(--shadow-purple); */
 }
 
-@media (min-width: 1400px){
-    body{
-        display: grid;
-        justify-items: center;
-    }
-
-    body > *{
-        width: 1400px;
-    }
-}
-
 header{
     width: 100%;
     display: grid;

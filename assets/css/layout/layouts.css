@@ -10,29 +10,3 @@
 
 /* Outros Layouts */
 
-.l--hero{
-    background-image: url(../../img/bg-images/colar.png);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: right;
-
-    width: 100vw;
-    height: 100svh;
-    min-height: 650px;
-    padding: 5% var(--page-content-padding);
-
-    display: flex;
-    justify-content: start;
-    align-items: end;
-
-    position: relative;
-}
-
-@media (max-width: 750px) {
-    .l--hero{
-        background-size: auto 50%;
-        background-position: right;
-
-        padding: 30% var(--page-content-padding);
-    }
-}
