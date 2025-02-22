@@ -1,3 +1,4 @@
 .l--main{
-    
+    display: grid;
+    gap: var(--large-margin);
 }
