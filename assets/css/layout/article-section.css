@@ -18,14 +18,14 @@
     }
 }
 
-@media (min-width: 1500px){
+@media (min-width: 1400px){
     .l--section-background{
         display: grid;
         justify-items: center;
     }
 
     .l--section-broad-content{
-        width: 1200px;
+        width: 1400px;
     }
 }
 
@@ -65,6 +65,12 @@
     }
 }
 
+@media (min-width: 1400px){
+    .l--section__hero .l--section-broad-content{
+        width: 1400px;
+    }
+}
+
 /* ------------------------------------------------------- */
 /* Utils*/
 
@@ -93,7 +99,7 @@
 .l--section__text-on-the-box .l--article{
     /* transform: translateY(-50%); */
     position: absolute;
-    right: 0;
+    right: var(--page-content-padding);
     bottom: 0;
 }
 
