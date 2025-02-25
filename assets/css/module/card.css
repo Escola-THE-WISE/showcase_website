@@ -27,7 +27,7 @@
     max-width: 28rem;
 }
 
-.m--card.m--card__location{
+.m--card__location.m--card{
     border-radius: var(--border-radius-medium);
     width: clamp(20rem, 40vw, 25rem);
     padding: 0;

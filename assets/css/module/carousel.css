@@ -1,0 +1,11 @@
+.m--carousel{
+    background-color: lightcoral;
+}
+
+.m--carousel-timeline{
+    aspect-ratio: 16 / 9;
+}
+
+.l--section__carousel-timeline .m--carousel__pagination{
+    position: static;
+}

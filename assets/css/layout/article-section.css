@@ -130,6 +130,17 @@
     height: 0;
 }
 
+.l--section__carousel-section{
+    width: 100%;
+    background-color: rgb(7, 53, 37);
+}
+
+.l--section__carousel-timeline{
+    display: grid;
+    grid-template-columns: 1fr 20rem;
+    gap: 1rem;
+}
+
 .l--section__details-section{
     display: grid;
     gap: var(--grid-gap);

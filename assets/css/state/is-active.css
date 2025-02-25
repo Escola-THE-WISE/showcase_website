@@ -57,3 +57,9 @@
         align-items: start; /* Em is-scrooler (__states) também têm pq esse aqui por algum motivo n está funcioando */
     }
 }
+
+/* Carrossel */
+
+.l--section__carousel-timeline.is-active{
+    display: grid;
+}

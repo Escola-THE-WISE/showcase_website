@@ -8,11 +8,17 @@
 @import url('article.css');
 @import url('section.css');
 @import url('details.css');
+@import url('carousel.css');
 
 /* Outros Módulos */
 
 .m--banner-container{
     background-color: var(--shadow-purple);
+    width: 100%;
+}
+
+.m--banner-container-100{
+    height: 100%;
     width: 100%;
 }
 
@@ -26,9 +32,16 @@
 
 .m--banner-container-16-9{
     aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 .m--banner-container-3-4{
     aspect-ratio: 3 / 4;
+    object-fit: cover;
     max-width: 480px;
+}
+
+.m--banner-container-4-3{
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
 }
