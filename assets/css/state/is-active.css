@@ -63,3 +63,10 @@
 .l--section__carousel-timeline.is-active{
     display: grid;
 }
+
+.m--carousel__pagination.is-active{
+    background-color: white;
+    opacity: 1;
+    scale: 1;
+}
+

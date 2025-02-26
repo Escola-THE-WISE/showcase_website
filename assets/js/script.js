@@ -3,23 +3,35 @@ document.addEventListener( 'DOMContentLoaded', function() {
     var carouselTimeline = new Splide( '.m--carousel-timeline', {
         direction: 'ttb',
         height: '100%',
-        rewind: true,
-        rewindByDrag: true,
+        rewind: false,
+        rewindByDrag: false,
         arrows: boolean = false,
         pagination: boolean = true,
         paginationKeyboard: boolean = true,
         classes: {
-            pagination: 'splide__pagination m--carousel__pagination',
-        },
+            pagination: 'splide__pagination m--carousel__pagination-container m--carousel-timeline__pagination-container',
+            page      : 'splide__pagination__page m--carousel__pagination m--carousel-timeline__pagination',
+        }
       } );
       
     carouselTimeline.mount();
 
-    var carousel2025 = new Splide( '.m--carousel-2025', {
-        type: 'loop',
-        arrows: boolean = true,
-        paginationKeyboard: boolean = true,
-    });
-    carousel2025.mount();
     
-  } );
+    var carousels = document.querySelectorAll('.m--carousel-default');
+
+    carousels.forEach(carousel =>{
+        var carouselMount = new Splide( carousel, {
+            type: 'loop',
+            arrows: boolean = false,
+            paginationKeyboard: boolean = true,
+            classes: {
+                pagination: 'splide__pagination m--carousel__pagination-container',
+                page      : 'splide__pagination__page m--carousel__pagination',
+            }
+        });
+        carouselMount.mount();
+    })
+      
+    
+} );
+

@@ -1,11 +1,91 @@
 .m--carousel{
-    background-color: lightcoral;
+    width: 100%;
+    height: 100%;
+}
+
+.m--carousel-default{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
 }
 
 .m--carousel-timeline{
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 5 / 2;
 }
 
-.l--section__carousel-timeline .m--carousel__pagination{
+.m--carousel-track{
+    width: 100%;
+    position: relative;
+}
+
+.m--carousel__pagination-container > *{
+    outline: 1px solid red;
+}
+
+/* .m--carousel__pagination-container{
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 0.3rem;
+}
+
+.m--carousel-timeline__pagination-container{
+    position: static;
+    transform: translateX(0%);
+
+    display: grid;
+
+
+}
+
+@media (max-width: 768px){
+    .m--carousel-timeline__pagination-container{
+        position: static;
+        display: flex;
+    }
+}
+
+.m--carousel__pagination-container > *{
+    outline: 1px solid red;
+}
+
+.m--carousel-timeline__pagination-container> *{
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.m--carousel__pagination{
+    width: 10px;
+    height: 10px;
+}
+
+.m--carousel-timeline__pagination{
     position: static;
 }
+
+.m--carousel-timeline__pagination-container > *::after{
+    font-weight: 700;
+    font-size: var(--large-text-size);
+}
+
+.m--carousel__pagination{
+    position: absolute;
+    background-color: gray;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+}
+
+.m--carousel-timeline__pagination{
+    background-color: transparent;
+    border: 2px solid white;
+    opacity: 1;
+    width: 1rem;
+    height: 1rem;
+} */

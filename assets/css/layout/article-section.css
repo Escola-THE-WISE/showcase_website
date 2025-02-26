@@ -1,3 +1,6 @@
+/* ------------------------------------------------------- */
+/* Padrão */
+
 .l--section-background{
     width: 100vw;
     display: grid;
@@ -115,6 +118,7 @@
 }
 
 /* ------------------------------------------------------- */
+/* Card */
 
 .l--section__card-section{
     width: 100%;
@@ -130,16 +134,30 @@
     height: 0;
 }
 
+/* ------------------------------------------------------- */
+/* Carrossel */
+
 .l--section__carousel-section{
     width: 100%;
-    background-color: rgb(7, 53, 37);
 }
 
 .l--section__carousel-timeline{
     display: grid;
-    grid-template-columns: 1fr 20rem;
+    grid-template-columns: 1fr clamp(5rem, 20vw, 20rem);
     gap: 1rem;
 }
+
+@media (max-width: 768px){
+    .l--section__carousel-timeline{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        gap: 1rem;
+    }
+}
+
+/* ------------------------------------------------------- */
+/* Outros */
 
 .l--section__details-section{
     display: grid;
