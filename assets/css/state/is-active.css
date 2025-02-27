@@ -65,8 +65,15 @@
 }
 
 .m--carousel__pagination.is-active{
-    background-color: white;
+    background-color: var(--primary-yellow);
     opacity: 1;
-    scale: 1;
 }
 
+.m--carousel-timeline__pagination.is-active{
+    background-color: var(--primary-white);
+}
+
+.m--carousel-timeline__pagination-container > li.is-active{
+    display: flex;
+    transform: scale(1.1);
+}
