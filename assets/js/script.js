@@ -35,21 +35,38 @@ document.addEventListener( 'DOMContentLoaded', function() {
         });
         carouselMount.mount();
     })
-      
-    document.querySelectorAll('.m--carousel-timeline__pagination').forEach(pagination =>{
-        pagination.addEventListener('click', function(){
 
-            document.querySelectorAll(' ').forEach(itemLista =>{
+    document.querySelectorAll("ul.m--carousel-timeline__pagination-container li").forEach(li => {
+        li.classList.add("m--carousel-timeline__pagination-item");
+    });
 
-                if(pagination.classList.contains('is-active')){
-                    itemLista.classList.add('is-active');
-                }
-                else{
-                    itemLista.classList.remove('is-active');
-                }
-            })
+    paginations = document.querySelectorAll('.m--carousel-timeline__pagination')
+
+    paginations.forEach((pagination, index) => {
+        pagination.addEventListener('click', function() {
+    
+            // Remover 'is-active' de todos os itens da lista
+            document.querySelectorAll('.m--carousel-timeline__pagination-item').forEach(item => {
+                item.classList.remove('is-active');
+            });
+    
+            // Se o botão de paginação clicado tem 'is-active', aplicar ao item correspondente
+            if (pagination.classList.contains('is-active')) {
+                document.querySelectorAll('.m--carousel-timeline__pagination-item')[index].classList.add('is-active');
+            }
+    
+            // Selecionar o container da timeline
+            const carouselTimeline = document.querySelector(".m--carousel-timeline__pagination-container");
+    
+            if (carouselTimeline) {
+                // Calcula a posição baseada no índice: começa em 33% e aumenta 33% por índice
+                const translateValue = -33 * (index - 1);
+    
+                // Aplica a transformação no eixo Y
+                carouselTimeline.style.transform = `translateY(${translateValue}%)`;
+                carouselTimeline.style.transition = "transform 0.3s ease-in-out"; // Suaviza a transição
+            }
         });
-
     });
 } );
 

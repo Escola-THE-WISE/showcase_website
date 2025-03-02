@@ -75,5 +75,21 @@
 
 .m--carousel-timeline__pagination-container > li.is-active{
     display: flex;
-    transform: scale(1.1);
+    transform: scale(1.0);
+}
+
+.m--carousel-timeline__pagination-container > li.is-active::before{
+    background: linear-gradient(#f5f5f750 ,#f5f5f7, #f5f5f750);
+}
+
+.m--carousel-timeline__pagination-container > li.is-active:first-child::before{
+    background: linear-gradient(#f5f5f7, #f5f5f750);
+}
+
+.m--carousel-timeline__pagination-container > li.is-active:last-child::before{
+    background: linear-gradient(#f5f5f750 ,#f5f5f7);
+}
+
+.m--carousel-timeline__pagination-container > li.is-active::after{
+    color: var(--primary-white);
 }
