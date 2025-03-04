@@ -1,0 +1,50 @@
+
+/* Animation */
+@keyframes fade-in {
+    from{ 
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    to{ 
+        transform: scale(1);
+        opacity: 1; 
+    }
+}
+
+@keyframes left-to-right {
+    from{ 
+        transform: translateX(-100px);
+        opacity: 0.5;
+    }
+    to{ 
+        transform: translateX(0px);
+        opacity: 1; 
+    }
+}
+
+@keyframes bottom-to-top {
+    from{ 
+        transform: translateY(100px);
+        opacity: 0.5;
+    }
+    to{ 
+        transform: translateX(0px);
+        opacity: 1; 
+    }
+}
+
+.fade-in{
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+}
+
+.l--section__hero .fade-in{
+    
+}
+
+.left-to-right{
+    animation: left-to-right linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
